@@ -31,5 +31,11 @@ def download_unico():
         stream.download(caminho)
         print('Download concluído...')
         sleep(2)
-    
-    
+
+def download_playlist():
+    playlist = input('Cole o link da PLAYLIST: ')
+    sleep(3)
+    pl = Playlist(playlist)
+    for videos in pl.videos:
+        print(f'Baixando: "{video.title}"')
+        
