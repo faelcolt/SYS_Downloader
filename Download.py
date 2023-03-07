@@ -43,4 +43,15 @@ def download_playlist():
 print('Bem vindo ao programa!')
 print('Ele foi construído para baixar vídeos, músicas ou playlists inteiras do Youtube.')
 print(f'Seus downloads ficarão salvos em {caminho}.')
+
+contador = 0
+
+while contador == 0:
+    escolha = input('Você quer baixar um vídeo ou uma playlist?: V ou P ').lower()
+    
+    if escolha == 'v':
+        download_unico()
+    elif escolha == 'p':
+        download_playlist()
+    contador += 1
         
