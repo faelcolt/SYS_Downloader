@@ -38,4 +38,9 @@ def download_playlist():
     pl = Playlist(playlist)
     for videos in pl.videos:
         print(f'Baixando: "{video.title}"')
+        video.streams.get_by_itag(140).download()
+        
+print('Bem vindo ao programa!')
+print('Ele foi construído para baixar vídeos, músicas ou playlists inteiras do Youtube.')
+print(f'Seus downloads ficarão salvos em {caminho}.')
         
