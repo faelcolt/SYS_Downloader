@@ -22,4 +22,12 @@ if tipo == 'v':
     stream.download(caminho)
     print('Download concluído...')
     
+else:
+    stream = yt.streams.get_by_itag(140)
+    print('Fazendo download...')
+    sleep(2)
+    stream.download(caminho)
+    print('Download concluído...')
+    sleep(2)
+    
     
