@@ -44,6 +44,7 @@ print('Bem vindo ao programa!')
 print('Ele foi construído para baixar vídeos, músicas ou playlists inteiras do Youtube.')
 print(f'Seus downloads ficarão salvos em {caminho}.')
 
+
 contador = 0
 
 while contador == 0:
